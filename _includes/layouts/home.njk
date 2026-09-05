@@ -63,7 +63,6 @@ section: home
                 <li><a href="#levelOne">HOME</a></li>
                 <li><a href="#levelTwo">ABOUT</a></li>
                 <li><a href="#levelThree"> AUDIO ARCHIVES</a></li>
-                <li><a href="#levelFour">NEWS</a></li>
                 <li><a href="#footer">CONTACT/DONATE</a></li>
             </ul>
         </div><!--endnav-->
@@ -128,7 +127,7 @@ section: home
         <li><a href="https://web.archive.org/web/2026id_/https://weatherfortheblind.org/wp-content/themes/weather/tracks/SUNRISE.mp3" target="_blank">SUNRISE</a></li>
         <li><a href="https://web.archive.org/web/2026id_/https://weatherfortheblind.org/wp-content/themes/weather/tracks/STORM.mp3" target="_blank">STORM</a></li>
       </ul>
-<div class="post"><a href="https://weatherfortheblind.netlify.app/weather-warlock-full-band-at-gonerfest/" target="_blank">WEATHER WARLOCK – FULL BAND DEBUT AT GONERFEST</a></div>
+<div class="post"><a href="/weather-warlock-full-band-at-gonerfest/">WEATHER WARLOCK – FULL BAND DEBUT AT GONERFEST</a></div>
 </div><!--endinner-->
 </div><!--endlevelthree-->
 <div id="footer">
@@ -173,7 +172,9 @@ $(document).ready(function() {
   updateDate();
   setInterval(updateDate, 1000);
   $('#nav').slicknav();
-  $(".inner a").attr("target","_blank");
+  $(".inner a").filter(function() {
+      return this.hostname && this.hostname !== location.hostname;
+  }).attr("target","_blank");
   $('img').addClass('img-responsive');
   $('#nav li a').click(function(){
       $('html, body').animate({
