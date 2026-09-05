@@ -1,0 +1,640 @@
+/*
+Theme Name: weather
+Theme URI: weatherfortheblind.org
+Description: weather theme
+Author: sharkeystudio
+Author URI: http://sharkeystudio.com/
+Version: 1.0
+
+License:
+License URI:
+
+General comments (optional).
+*/
+
+
+#sub {
+
+	background: #000;
+}
+
+.wrapper {
+
+
+		width: 100%;
+
+}
+
+.slicknav_menu {
+
+	display: none;
+	margin-top: 30px;
+}
+
+.slicknav_menu {
+
+	background: #000!important;
+}
+
+.slicknav_menutxt {
+
+	display: none!important;
+}
+
+.notFixed {
+
+	position:absolute!important;
+}
+
+
+.content {
+
+	text-align:left!important;
+}
+
+.content  p {
+
+	text-align: left;
+}
+
+.singleWrapper {
+
+	max-width: 960px;
+	padding-top: 100px;
+	background: #000;
+
+}
+
+
+.singleWrapper img {
+
+		margin-top: 20px;
+}
+
+
+#video {
+
+		margin-top: 20px;
+		width: 100%;
+
+}
+
+#levelOne iframe {
+
+	width:40%;
+	height: 180px;
+	margin-top: 100px;
+	
+}
+
+
+.inner iframe {
+
+	width: 100%!important;
+	max-width: 500px;
+}
+
+
+
+
+
+#info {
+
+			border: 1px solid #fff;
+			max-width: 480px;
+			margin: 0 autoleft}
+
+#weather {
+
+		max-width: 600px;
+		width: 100%;
+		font-size: 20px;
+		text-transform: uppercase;
+
+}
+
+#time h4 {
+
+	font-size:20px!important;
+		color:#fff!important;
+}
+
+
+#weather p {
+
+		font-size:15px!important;
+		color:#fff!important;
+}
+
+
+
+#weather p {
+
+		font-size: 15px;
+
+}
+
+
+.inner {
+
+		width: 100%;
+		max-width: 1200px;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		
+}
+
+
+
+#logo1 {
+
+		position: absolute;
+		top:0px;
+		margin-left: 20px;
+		margin-top: 40px;
+		max-width: 350px;
+		width: 100%;
+		
+}
+
+
+#logo1 img {
+
+		max-width: 50%;
+}
+
+#logo {
+
+		max-width: 300px;
+}
+
+
+
+#logo img {
+
+		width: 100%;
+}
+
+
+#header {
+
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background:#000;
+		top:0px;
+		left:0px;
+		position: fixed;
+}
+
+#nav {
+
+		float: right;
+		margin-right: 30px;
+
+}
+
+
+#nav ul {
+
+		margin-top: 30px;
+}
+
+
+#nav ul li {
+
+		font-family: 'Lato', sans-serif;
+		color: #fff;
+		list-style-type: none;
+		text-transform: uppercase;
+		padding-right: 14px;
+		display: inline;
+		font-size: 12px;
+	   -webkit-font-smoothing: antialiased;
+
+}
+
+
+#nav ul li a {
+
+		color: #fff;
+		text-decoration: none;
+}
+
+
+
+#levelOne {
+
+	width:100%;
+	height: 100%;
+	background:url('/static/img/beach2.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+#newsLevel {
+
+	width:100%;
+	background:#000;
+	padding-bottom: 100px;
+}
+
+
+#levelTwo {
+
+	width:100%;
+	height: 100%;
+	background:url('/static/img/sensor7.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover=;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+
+}
+
+#levelThree {
+
+	width:100%;
+	background:url('/static/img/close.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 100px;
+	
+
+}
+
+
+#levelFour {
+
+	width:100%;
+	background:url('/static/img/studio.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 100px;
+	
+
+}
+
+
+
+#footer {
+
+		width: 100%;
+		background: #000;
+		height: 300px;
+		
+}
+
+
+#left {
+
+		max-width: 500px;
+		width: 100%;
+		float: left;
+		text-align: left;
+}
+
+
+#right {
+
+		max-width: 600px;
+		width: 100%;
+		float: right;
+}
+
+.col {
+
+	display: inline-table;
+	float: left;
+
+}
+
+
+#news {
+   
+   width: 100%;
+   min-height: 500px;
+   max-width: 500px;
+   text-align: left;
+
+}
+
+
+#archives {
+
+		width: 100%;
+		max-width: 500px;
+		min-height: 500px;
+		text-align: left;
+		margin-left: 170px;
+}
+
+.footy {
+
+		max-width: 300px;
+		display: inline-table;
+		width: 100%;
+		margin-left: 25px;
+		text-align: left;
+		float: left;
+		padding-top:30px;
+		margin-top: 0px!important;
+		min-height: 100px;
+}
+
+.footy ul {
+
+		padding: 0!important;
+}
+
+
+.footy p {
+
+		font-size: 13px;
+		margin-top: 0px!important;
+}
+
+
+.footy ul li {
+
+		font-family: 'Lato', sans-serif;
+		color: #fff;
+		margin-top: 20px;
+		font-size: 11px;
+		text-transform: uppercase;
+			-webkit-font-smoothing: antialiased;
+			list-style-type: none;
+}
+
+
+.post {
+
+		margin-top: 15px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+}
+
+
+.post p,.post h5 {
+
+		margin: 0!important;
+}
+
+.post p {
+
+		font-size: 12px;
+		margin-top: 5px;
+}
+
+
+#right img {
+
+		width: 100%;
+		margin-top: 80px;
+}
+
+
+
+.inner  p {
+
+
+	  max-width: 1000px;
+	  margin: 0 auto;
+	  margin-top: 15px;
+	  line-height: 150%;
+
+
+}
+
+
+#left p {
+
+
+		color: #fff;
+		
+}
+
+
+
+h1,h2,h3,h4,h5,h6  {
+
+		font-family: 'Lato', sans-serif;
+		color:#fff;
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
+}
+
+a {
+
+	color: #ff95a7;
+}
+
+a:hover {
+
+	color: #ff95a7;
+	text-decoration: underline;
+
+}
+
+p {
+
+		font-family: 'Lato', sans-serif;
+		color: #fff;
+		font-size: 15px;
+		margin-top: 15px;
+		-webkit-font-smoothing: antialiased;
+
+}
+
+
+.action {
+
+		font-size: 50px;
+		color: #fff;
+		margin-top: 50px;
+		-webkit-font-smoothing: antialiased;
+		font-family: 'Lato', sans-serif;
+}
+
+
+.title {
+
+		margin-bottom: 50px;
+		font-size: 40px;
+		font-family: 'Lato', sans-serif;
+		color:#fff;
+		text-transform: uppercase;
+}
+
+
+#levelThree .title {
+
+		margin-bottom: 50px;
+}
+
+
+.date {
+
+		text-transform: uppercase;
+}
+
+
+#examp {
+
+		margin-bottom: 40px;
+		margin-top: 40px;
+}
+
+
+#examp li {
+
+
+		list-style-type: none;
+		display: inline;
+		font-family: 'Lato', sans-serif;
+		color: #fff;
+		font-weight: bold;
+		font-size: 20px;
+		padding-right: 40px;
+
+
+}
+
+ 
+@media screen and (max-width: 1000px) {
+
+
+
+#levelOne {
+
+	width:100%;
+	background:url('/static/img/beach2.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+
+
+#levelTwo {
+
+	width:100%;
+	background:url('/static/img/sensor7.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+
+}
+
+#levelThree {
+
+	width:100%;
+	background:url('/static/img/close.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 100px;
+	
+
+}
+
+
+#levelFour {
+
+	width:100%;
+	background:url('/static/img/studio.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 100px;
+	
+
+}
+
+
+
+
+
+	.title {
+
+		margin-bottom: 35px;
+		font-size: 30px;
+		font-family: 'Lato', sans-serif;
+		color:#fff;
+		text-transform: uppercase;
+}
+
+#logo1 {
+
+		position:absolute;
+		top:0px;
+		margin-left: 20px;
+		margin-top: 40px;
+		max-width: 250px;
+		
+}
+
+
+
+.slicknav_menu {
+
+	display: block;
+}
+
+
+#header {
+
+	position: static;
+}
+
+
+#nav {
+
+	display: none;
+}
+
+
+.action {
+
+		font-size: 35px;
+		color: #fff;
+		margin-top: 50px;
+		-webkit-font-smoothing: antialiased;
+		font-family: 'Lato', sans-serif;
+}
+
+
+}
+
+/*
+     FILE ARCHIVED ON 18:50:57 May 28, 2026 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:22:12 Sep 05, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.304
+  load_resource: 793.246 (2)
+  PetaboxLoader3.resolve: 84.108 (2)
+  PetaboxLoader3.datanode: 532.8 (2)
+*/

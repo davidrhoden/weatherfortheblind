@@ -78,7 +78,11 @@ module.exports = function(eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
+  eleventyConfig.addPassthroughCopy("static/audio");
   eleventyConfig.addPassthroughCopy("admin/");
+  // Legacy assets salvaged from the archived WordPress site
+  eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "_includes/assets/css" });
+  eleventyConfig.addPassthroughCopy({ "_includes/assets/js": "_includes/assets/js" });
   // We additionally output a copy of our CSS for use in Decap CMS previews
   eleventyConfig.addPassthroughCopy("_includes/assets/css/inline.css");
 

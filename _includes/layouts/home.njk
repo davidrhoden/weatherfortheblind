@@ -1,6 +1,218 @@
 ---
-layout: layouts/base.njk
 section: home
 ---
 
-{{ content | safe }}
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather for the blind</title>
+
+    <!-- Bootstrap -->
+    <link href="/_includes/assets/css/bootstrap.min_UPu8.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/_includes/assets/css/style_UPu8.css" type="text/css" media="screen">
+
+    <link href="/_includes/assets/css/css_UPu8.css" rel="stylesheet" type="text/css">
+    <link href="/_includes/assets/css/font-awesome.min_UPu8.css" rel="stylesheet">
+
+    <meta name="robots" content="max-image-preview:large">
+<link rel="stylesheet" id="wp-block-library-css" href="/_includes/assets/css/style.min_UPu8.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="responsive-lightbox-nivo_lightbox-css-css" href="/_includes/assets/css/nivo-lightbox_UPu8.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-lightbox-nivo_lightbox-css-d-css" href="/_includes/assets/css/default_UPu8.css" type="text/css" media="all">
+<script type="text/javascript" src="/_includes/assets/js/jquery.min_002_UPu8.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="/_includes/assets/js/jquery-migrate.min_UPu8.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="/_includes/assets/js/nivo-lightbox.min_UPu8.js" id="responsive-lightbox-nivo_lightbox-js"></script>
+<script type="text/javascript" id="responsive-lightbox-lite-script-js-extra">
+/* <![CDATA[ */
+var rllArgs = {"script":"nivo_lightbox","selector":"lightbox","custom_events":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/_includes/assets/js/script_UPu8.js" id="responsive-lightbox-lite-script-js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56045249-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </head>
+
+
+  <body id="sub">
+    <div id="header" class="wrapper">
+      <div id="logo1">
+        <a href="/"><img src="/static/img/mainLogo1_UPu8.png" alt="" class="img-responsive"></a>
+      </div>
+        <div id="nav">
+
+            <ul>
+                <li><a href="#levelOne">HOME</a></li>
+                <li><a href="#levelTwo">ABOUT</a></li>
+                <li><a href="#levelThree"> AUDIO ARCHIVES</a></li>
+                <li><a href="#levelFour">NEWS</a></li>
+                <li><a href="#footer">CONTACT/DONATE</a></li>
+            </ul>
+        </div><!--endnav-->
+    </div><!--endheader-->
+    <div id="levelOne" class="wrapper">
+      <div class="inner container">
+          <p style="margin-top: 5em;">
+          </p><h4 class="action">WEATHER FOR THE BLIND</h4><br>
+
+<!-- PLAYER WIDGET CODE -->
+<h4>PRESS PLAY BELOW TO HEAR LIVE STREAM FROM NEW ORLEANS</h4><p></p>
+<iframe src="https://mixlr.com/weather-for-the-blind/embed" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe>
+<p style="text-align: center;">If the New Orleans station is off-air, please link to our <a href="https://wavefarm.org/ta/archive/works/g7yqrm" target="_blank">UPSTATE NY LIVE STREAM</a></p>
+<p style="text-align: center;">Weather for the blind is a live streaming site of a musical instrument which is played by the weather. The base station –<a href="/static/img/warlock.jpg" target="_blank"> pictured in the foreground</a> – is called Weather Warlock and is currently streaming live from New Orleans. In the event that the home stream is down, you can check out the live stream of our “Upstate Warlock”, stationed at <a title="Wave Farm Weather Warlock" href="http://wavefarm.org/ta/works/g7yqrm" target="_blank" rel="noopener">Wave Farm</a> in Acra New York.</p>
+<p>The weather sensors – <a href="/static/img/sensors-close.jpg" target="_blank">pictured in the distant surf</a> – are mounted to a post and detect temperature, wind-speed, UV index, barometric pressure, flooding, and atmospheric moisture. This all-analog synthesizer produces a wide range of tones and harmonics based around a consonant B flat major chord with special audio events occurring during sunrise and sunset. A new companion-instrument called, “Traffic Saxx” is also mixed into the stream. Traffic Saxx captures and filters the white noise from traffic on St. Claude Avenue, changing a sound which can be stressful, into something more oceanic and calming. Weather Warlock evolved from an earlier incarnation called “Weather Witch”, developed by Mars Brown and Quintron. The very first prototype was called&nbsp;“Singing House” which was debuted by N.O.Airlift in 2011.</p>
+<p>&nbsp;</p>
+<br><br>
+<h4>CURRENT LOCATION: NEW ORLEANS, LA</h4>
+    <div id="time" class="container">
+    <h4 class="date">May 28, 2026, 1:50 pm</h4>
+    </div>
+    <div id="weather" class="container">
+    </div>
+  </div>
+</div><!--endlevelOne-->
+
+<div id="levelTwo" class="wrapper">
+  <div id="about" class="inner container">
+    <h1 class="title">WHAT IS IT?</h1>
+    <div id="left">
+        <p>Since 2011 Quintronics – the company who introduced&nbsp;the <a href="http://www.quintronandmisspussycat.com/drumbuddy.html" target="_blank">Drum Budd</a>y in 1999 –&nbsp;&nbsp;has been actively developing a low voltage weather controlled drone synthesizer. Base station number 1, called WEATHER WARLOCK was finally finished in the Spring of 2014 at the Robert Rauschenberg Foundation in Captiva, Florida. &nbsp;Weather Warlock evolved out of an earlier project Called Weather Witch.</p>
+        <p>www.weatherfortheblind.org&nbsp;will stream sounds from this musical weather station most every day and night as a free public service. This giant analog synth and it’s weather sensors will live primarily in New Orleans Louisiana at the Spellcaster Lodge. The entire apparatus will occasionally travel as part of a live band, also called&nbsp;<a href="http://weatherwarlock.com/" target="_blank">WEATHER WARLOCK</a> or as a part of&nbsp;<a href="http://www.quintronandmisspussycat.com/" target="_blank">QUINTRON AND MISS PUSSYCAT</a>.</p>
+        <p>A weather controlled synthesizer had long been on the books for Quintronics but it took a fairly serious health crisis and a forced “vacation” from touring to steer these sounds towards consonant drone…F major to be exact. Mental and cellular relaxation became a part of the invention process.</p>
+        <p>This site is called “weather for the blind” in reference to a circadian rhythm sleep disorder suffered by many sight impaired persons. Our hope is that this instrument could be of some help to those experiencing any type of sleep disorder or to anyone suffering from stress or health issues which might benefit from a direct musical connection to nature. Quintronics makes NO MEDICAL CLAIMS that our instrument is physically or mentally curative. The brain is a mysterious organ with many needs. Those suffering from “Non-24” should seek information from their doctor.&nbsp; More information about “Non-24” can be found at the <a title="NATIONAL SLEEP FOUNDATION" href="https://sleepfoundation.org/non-24/content/facts-prevalence" target="_blank" rel="noopener">NATIONAL SLEEP FOUNDATION.</a></p>
+        <p>Another future mission for this endeavor is that more base stations be built around the world so that listeners may experience musical interpretations of a variety of different climates and time zones – from Iceland to the Amazon. Please contact <strong>rhinestonerecords@hotmail.com</strong> if your museum, school, or private institution would be interested in commissioning a custom base station.</p>
+        <p>Occasionally weatherfortheblind.org&nbsp;will broadcast other sounds, stories, and special events. &nbsp;We will also invite guests manipulators to come and jam on the base station knobs and communicate with the weather gods for our&nbsp;listening pleasure.&nbsp;Thanks for visiting and please enjoy.</p>
+        <p>&nbsp;</p>
+        <p><a href="/static/img/controls2.jpg" target="_blank"><img loading="lazy" decoding="async" class="alignnone wp-image-7  img-responsive" src="/static/img/controls2_UPu8.jpg" alt="controls2" width="578" height="167"></a></p>
+        <p>This project would not have been possible without the assistance of the Robert Rauschenberg Foundation, New Orleans Airlift, Tulane University, artist / engineer Mars Brown, Rami (Ballzack) Sharkey, and the ever brilliant advice of Miss Pussycat.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div><!--endleft-->
+      <div id="right">
+        <img src="/static/img/diagram_UPu8.png" alt="" class="img-responsive"><br>
+      </div><!--endright-->
+    </div>
+  </div><!--endleveltwo-->
+  <div id="levelThree">
+    <div class="inner container">
+      <h1 class="title">AUDIO ARCHIVES</h1>
+      <p><iframe loading="lazy" title="Singing House demo - an early WEATHER WARLOCK prototype" width="500" height="281" src="https://www.youtube.com/embed/5CtJDq8tCDs?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ruffle-polyfilled=""></iframe></p>
+      <ul id="examp">
+        <li><a title="sleeping" href="https://web.archive.org/web/2026id_/https://weatherfortheblind.org/wp-content/themes/weather/tracks/SLEEP.mp3" target="_blank">SLEEP</a></li>
+        <li><a href="https://web.archive.org/web/2026id_/https://weatherfortheblind.org/wp-content/themes/weather/tracks/RELAX.mp3" target="_blank">RELAX</a></li>
+        <li><a href="https://web.archive.org/web/2026id_/https://weatherfortheblind.org/wp-content/themes/weather/tracks/WORK.mp3" target="_blank">WORK</a></li>
+        <li><a href="https://web.archive.org/web/2026id_/https://weatherfortheblind.org/wp-content/themes/weather/tracks/SUNRISE.mp3" target="_blank">SUNRISE</a></li>
+        <li><a href="https://web.archive.org/web/2026id_/https://weatherfortheblind.org/wp-content/themes/weather/tracks/STORM.mp3" target="_blank">STORM</a></li>
+      </ul>
+<div class="post"><a href="https://weatherfortheblind.netlify.app/weather-warlock-full-band-at-gonerfest/" target="_blank">WEATHER WARLOCK – FULL BAND DEBUT AT GONERFEST</a></div>
+</div><!--endinner-->
+</div><!--endlevelthree-->
+
+<div id="levelFour">
+    <div class="inner container">
+      <h1 class="title">NEWS</h1>
+      <div class="post"><a href="https://weatherfortheblind.netlify.app/weather-warlock-full-band-at-gonerfest/" target="_blank">WEATHER WARLOCK – FULL BAND DEBUT AT GONERFEST </a></div>
+      <div class="post"><a href="https://weatherfortheblind.netlify.app/prototype-3-the-rauschenberg-foundation/" target="_blank">Prototype #3 – The Rauschenberg Foundation </a></div>
+      <div class="post"><a href="https://weatherfortheblind.netlify.app/prototyope-2-the-weather-witch/" target="_blank">Prototyope #2 – The Weather Witch </a></div>
+      <div class="post"><a href="https://weatherfortheblind.netlify.app/prototype-1-the-singing-house/" target="_blank">Prototype #1 – The Singing House </a></div>
+    </div>
+</div><!--endlevelfour-->
+<div id="footer">
+  <div class="footy" style="float:left;">
+    <h5>CONTACT</h5>
+    <a href="mailto:rhinestonerecords@hotmail.com">rhinestonerecords@hotmail.com</a>
+    <h5>DONATE</h5>
+    <form target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_donations">
+      <input type="hidden" name="business" value="rhinestonerecords@hotmail.com">
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="item_name" value="Weather For The Blind">
+      <input type="hidden" name="no_note" value="0">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest">
+      <input type="image" src="/static/img/btn_donate_SM_UPu8.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="/static/img/pixel_UPu8.gif" width="1" height="1" class="img-responsive">
+    </form>
+  </div>
+</div><!--endfooter-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/_includes/assets/js/jquery.min_UPu8.js"></script>
+    <script src="/_includes/assets/js/jquery.simpleWeather_UPu8.js"></script>
+    <link href="/_includes/assets/css/slicknav_UPu8.css" rel="stylesheet">
+    <script type="text/javascript" src="/_includes/assets/js/jquery.slicknav.min_UPu8.js"></script>
+    <script type="text/javascript">
+
+$(document).ready(function() {
+  var nolaTime = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Chicago',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true
+  });
+  var updateDate = function() {
+    var formatted = nolaTime.format(new Date())
+      .replace(' at ', ', ')
+      .replace(/([AP])M/, function(m, p) { return p.toLowerCase() + 'm'; });
+    $('.date').text(formatted);
+  };
+  updateDate();
+  setInterval(updateDate, 1000);
+  $('#nav').slicknav();
+  $(".inner a").attr("target","_blank");
+  $('img').addClass('img-responsive');
+  $.simpleWeather({
+    location: 'New Orleans, LA',
+    woeid: '',
+    unit: 'f',
+    success: function(weather) {
+      html = '<p>'+weather.currently+' / '+weather.temp+'&deg;'+weather.units.temp+' / SUNRISE '+weather.sunrise+' / SUNSET ' +weather.sunset+'';
+      $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
+  });
+  $('#nav li a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top - 100}, 500);
+      return false;
+  });
+});
+</script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/_includes/assets/js/bootstrap.min_UPu8.js"></script>
+</body>
+</html>
+
