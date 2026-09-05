@@ -29,17 +29,7 @@ section: home
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel="stylesheet" id="responsive-lightbox-nivo_lightbox-css-css" href="/_includes/assets/css/nivo-lightbox_UPu8.css" type="text/css" media="all">
-<link rel="stylesheet" id="responsive-lightbox-nivo_lightbox-css-d-css" href="/_includes/assets/css/default_UPu8.css" type="text/css" media="all">
 <script type="text/javascript" src="/_includes/assets/js/jquery.min_002_UPu8.js" id="jquery-core-js"></script>
-<script type="text/javascript" src="/_includes/assets/js/jquery-migrate.min_UPu8.js" id="jquery-migrate-js"></script>
-<script type="text/javascript" src="/_includes/assets/js/nivo-lightbox.min_UPu8.js" id="responsive-lightbox-nivo_lightbox-js"></script>
-<script type="text/javascript" id="responsive-lightbox-lite-script-js-extra">
-/* <![CDATA[ */
-var rllArgs = {"script":"nivo_lightbox","selector":"lightbox","custom_events":""};
-/* ]]> */
-</script>
-<script type="text/javascript" src="/_includes/assets/js/script_UPu8.js" id="responsive-lightbox-lite-script-js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -103,8 +93,6 @@ var rllArgs = {"script":"nivo_lightbox","selector":"lightbox","custom_events":""
     <div id="time" class="container">
     <h4 class="date">May 28, 2026, 1:50 pm</h4>
     </div>
-    <div id="weather" class="container">
-    </div>
   </div>
 </div><!--endlevelOne-->
 
@@ -149,7 +137,7 @@ var rllArgs = {"script":"nivo_lightbox","selector":"lightbox","custom_events":""
       <h1 class="title">NEWS</h1>
       <div class="post"><a href="https://weatherfortheblind.netlify.app/weather-warlock-full-band-at-gonerfest/" target="_blank">WEATHER WARLOCK – FULL BAND DEBUT AT GONERFEST </a></div>
       <div class="post"><a href="https://weatherfortheblind.netlify.app/prototype-3-the-rauschenberg-foundation/" target="_blank">Prototype #3 – The Rauschenberg Foundation </a></div>
-      <div class="post"><a href="https://weatherfortheblind.netlify.app/prototyope-2-the-weather-witch/" target="_blank">Prototyope #2 – The Weather Witch </a></div>
+      <div class="post"><a href="https://weatherfortheblind.netlify.app/prototyope-2-the-weather-witch/" target="_blank">Prototype #2 – The Weather Witch </a></div>
       <div class="post"><a href="https://weatherfortheblind.netlify.app/prototype-1-the-singing-house/" target="_blank">Prototype #1 – The Singing House </a></div>
     </div>
 </div><!--endlevelfour-->
@@ -171,9 +159,6 @@ var rllArgs = {"script":"nivo_lightbox","selector":"lightbox","custom_events":""
     </form>
   </div>
 </div><!--endfooter-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/_includes/assets/js/jquery.min_UPu8.js"></script>
-    <script src="/_includes/assets/js/jquery.simpleWeather_UPu8.js"></script>
     <link href="/_includes/assets/css/slicknav_UPu8.css" rel="stylesheet">
     <script type="text/javascript" src="/_includes/assets/js/jquery.slicknav.min_UPu8.js"></script>
     <script type="text/javascript">
@@ -200,18 +185,6 @@ $(document).ready(function() {
   $('#nav').slicknav();
   $(".inner a").attr("target","_blank");
   $('img').addClass('img-responsive');
-  $.simpleWeather({
-    location: 'New Orleans, LA',
-    woeid: '',
-    unit: 'f',
-    success: function(weather) {
-      html = '<p>'+weather.currently+' / '+weather.temp+'&deg;'+weather.units.temp+' / SUNRISE '+weather.sunrise+' / SUNSET ' +weather.sunset+'';
-      $("#weather").html(html);
-    },
-    error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
-    }
-  });
   $('#nav li a').click(function(){
       $('html, body').animate({
           scrollTop: $( $.attr(this, 'href') ).offset().top - 100}, 500);
@@ -219,8 +192,6 @@ $(document).ready(function() {
   });
 });
 </script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/_includes/assets/js/bootstrap.min_UPu8.js"></script>
 </body>
 </html>
 
